@@ -20,3 +20,9 @@ const swiperAbout = new Swiper(".about__slider", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+document.querySelectorAll("accourderon__triger").forEach((item) => {
+  item.addEvenListener("click", () => {
+    item.parentNode.classList.toggle("accourderon__item--active");
+  });
+});
